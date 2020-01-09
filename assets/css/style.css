@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background-color: #db5461;
+}
+
+/* Main CSS */
+
+body {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source sans pro", sans-serif;
+  text-transform: uppercase;
+}
+
+.main-header {
+  display: flex;
+}
+
+.main-header img {
+  max-width: 10rem;
+  position: absolute;
+  width: 90%;
+  z-index: 3;
+}
+
+.main-header ul {
+  background-color: #fff;
+  font-weight: 600;
+  height: 2.5rem;
+  right: 0;
+  list-style: none;
+  padding: 2em;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 4em;
+  right: 2em;
+}
+
+.main-header ul a {
+  padding: 0.5em;
+}
+
+.main-header li {
+  padding: 2rem 0;
+}
+
+.header-1,
+.header-2 {
+  flex-grow: 1;
+  height: 43.75rem;
+  padding: 4em 2em;
+}
+
+.header-1 {
+  flex-basis: 40%;
+  background-color: coral;
+}
+
+.header-2 {
+  flex-basis: 60%;
+  background-image: url("../images/weights.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
