@@ -16,16 +16,6 @@ body {
   font-size: 1em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Source sans pro", sans-serif;
-  text-transform: uppercase;
-}
-
 .main-header {
   display: flex;
   background-image: url("../images/weights.jpg");
@@ -37,7 +27,7 @@ h6 {
   max-width: 20rem;
   position: absolute;
   z-index: 3;
-  top: 4em;
+  top: 1.5em;
   margin: 2em;
 }
 
@@ -92,9 +82,68 @@ h6 {
   height: 43.75rem;
   transform-origin: 100% 0;
   transform: skew(10deg);
-  z-index: 1;
+  z-index: 0;
+}
+
+.header-1 h2 {
+  color: #fff;
+  left: 10%;
+  position: absolute;
+  top: 20rem;
+  z-index: 3;
+  width: 30%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.learn-more {
+  background: #fff;
+  border: 4px solid #000;
+  border-radius: 1.5625rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  left: 25%;
+  margin-top: 10em;
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 26.25rem;
+  z-index: 3;
 }
 
 .header-2 {
   flex-basis: 60%;
+}
+
+.stats {
+  background-color: #30343f;
+  padding: 10px;
+}
+
+.container {
+  margin-left: 10%;
+  display: flex;
+}
+
+.item {
+  color: #fff;
+  display: flex;
+  height: 2.5rem;
+  flex-basis: 33.333333%;
+  align-items: center;
+}
+
+.item-text {
+  margin-left: 10px;
+}
+
+.item-text p {
+  color: rgb(185, 184, 184);
+}
+
+.item-highlight {
+  font-weight: bold;
 }
