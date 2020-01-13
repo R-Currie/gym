@@ -8,8 +8,8 @@ A static web page for a fitness center that has an interactive UI that makes it 
 * HTML5
 * CSS3
 * JavaScript ES10
-* Font Awesome 5.12.0
-* Smooth Scroll JavaScript [Plugin](https://github.com/cferdinandi/smooth-scroll)
+* [Font Awesome](https://fontawesome.com/) 5.12.0
+* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll) 15.1.3
 
 ### Installing
 
