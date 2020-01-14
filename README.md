@@ -4,6 +4,8 @@
 
 A static web page for a fitness center that has an interactive UI that makes it easy to sign up.
 
+![Gym Demo](https://i.imgur.com/escruNQ.gif)
+
 ### Technologies
 * HTML5
 * CSS3
