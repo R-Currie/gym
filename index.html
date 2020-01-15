@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- Header -->
+
     <header class="main-header">
       <div class="header-1">
         <div>
@@ -35,22 +37,24 @@
         <!-- <i class="fas fa-bars fa-3x"></i> -->
         <nav class="header-nav">
           <ul>
-            <a href="#">
+            <a class="scroll" href="#">
               <li>Home</li>
             </a>
-            <a href="#memberships">
+            <a class="scroll" href="#memberships">
               <li>Membership</li>
             </a>
-            <a href="#amenities">
+            <a class="scroll" href="#amenities">
               <li>Amenities</li>
             </a>
-            <a href="#contact">
+            <a class="scroll" href="#contact">
               <li>Contact</li>
             </a>
           </ul>
         </nav>
       </div>
     </header>
+
+    <!-- Under header numbers -->
 
     <main>
       <section class="stats">
@@ -79,7 +83,9 @@
         </div>
       </section>
 
-      <section class="memberships">
+      <!-- Memberships -->
+
+      <section id="memberships" class="memberships">
         <h2>Memberships</h2>
         <hr />
         <div class="membership-container">
@@ -110,7 +116,9 @@
         </div>
       </section>
 
-      <section class="amenities">
+      <!-- Amenities -->
+
+      <section id="amenities" class="amenities">
         <h2 style="text-transform: uppercase;">Amenities</h2>
         <hr />
         <div class="amenities-container">
@@ -135,7 +143,9 @@
         </div>
       </section>
 
-      <section class="contact">
+      <!-- Contact  -->
+
+      <section id="contact" class="contact">
         <h2 style="text-transform: uppercase;">Contact Us</h2>
         <hr />
         <div class="contact-container">
@@ -163,10 +173,11 @@
       </section>
     </main>
 
+    <!-- Scripts for smooth scrolling -->
+
     <script src="./assets/js/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      var scroll = new SmoothScroll('a[href*="#"]');
     </script>
   </body>
 </html>
