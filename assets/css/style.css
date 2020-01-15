@@ -287,3 +287,25 @@ hr {
 .contact-item {
   flex-basis: 33.3333%;
 }
+
+@media (max-width: 1000px) {
+  .main-header img {
+    margin-left: 1%;
+  }
+
+  .main-header ul {
+    top: 35%;
+  }
+}
+
+@media (max-width: 800px) {
+  .membership-container {
+    flex-direction: column;
+  }
+  .membership-item {
+    width: 60%;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
