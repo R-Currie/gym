@@ -297,12 +297,38 @@ hr {
 }
 
 @media (max-width: 1000px) {
+  .header-1::after {
+    background-color: rgba(113, 13, 126, 0);
+  }
+
+  .header-1 {
+    background-color: rgba(175, 0, 0, 0.6);
+  }
+
+  .header-2 {
+    background-color: rgba(175, 0, 0, 0.6);
+  }
+
   .main-header img {
-    margin-left: 1%;
+    position: absolute;
+    top: 130px;
+    width: 60vw;
+    height: auto;
+    left: 20vw;
+    margin-left: unset;
+    margin-right: unset;
   }
 
   .main-header ul {
-    top: 35%;
+    position: absolute;
+  }
+
+  .main-header h2 {
+    width: 60%;
+  }
+
+  .main-header button {
+    margin-top: 5em;
   }
 }
 
