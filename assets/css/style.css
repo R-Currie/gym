@@ -38,7 +38,7 @@ hr {
   margin: 2em;
 }
 
-.main-header ul {
+.header-nav ul {
   background-color: #fff;
   font-weight: 600;
   height: 2.5rem;
@@ -57,15 +57,25 @@ hr {
   border: 2px solid black;
 }
 
-.main-header ul a {
+.header-nav ul a {
   padding: 0.5em;
   text-decoration: none;
   color: black;
   font-family: "Roboto", sans-serif;
 }
 
-.main-header li {
+.header-nav li {
   padding: 2rem 0;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: #db5461;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .header-1,
@@ -300,6 +310,47 @@ hr {
   flex-basis: 33.3333%;
 }
 
+@media only screen and (max-width: 1000px) {
+  /* Header CSS */
+  .header-1 {
+    padding: 4em 3em;
+  }
+  .header-1 img {
+    max-width: 15rem;
+    left: 5%;
+    margin-left: 0;
+  }
+}
+
+.hidden-nav {
+  display: none;
+}
+
+.display-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+  width: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 11;
+}
+
+.display-nav li {
+  list-style: none;
+  margin-left: 25%;
+}
+
+.display-nav a {
+  padding: 0.5em;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
 @media (max-width: 800px) {
   .membership-container {
     flex-direction: column;
@@ -310,19 +361,16 @@ hr {
   .container {
     flex-direction: column;
   }
-}
 
-@media only screen and (max-width: 1000px) {
-  /* Header CSS */
-  .header-1 {
-    padding: 4em 3em;
-  }
   .header-1 img {
-    max-width: 9.375rem;
-    left: 5%;
-    margin-left: 0;
+    max-width: 10rem;
   }
+
   .header-nav {
     display: none;
+  }
+
+  .hamburger {
+    display: block;
   }
 }
