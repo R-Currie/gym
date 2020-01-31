@@ -267,9 +267,17 @@ hr {
   color: white;
 }
 
+.amenities-list li {
+  transition: 500ms;
+}
+
 .amenities-list a:hover {
   text-decoration: none;
   color: #db5461;
+}
+
+.amenities-list li:hover {
+  transform: rotate(5deg) scale(1.5);
 }
 
 .contact {
