@@ -23,6 +23,8 @@ hr {
   width: 3.125rem;
 }
 
+/* Header section */
+
 .main-header {
   display: flex;
   background-image: url("../images/weights.jpg");
@@ -70,12 +72,41 @@ hr {
 
 .hamburger {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 1em;
   right: 1em;
   color: #db5461;
   z-index: 10;
   cursor: pointer;
+}
+
+.hidden-nav {
+  display: none;
+}
+
+.display-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+  width: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 11;
+}
+
+.display-nav li {
+  list-style: none;
+  margin-left: 25%;
+}
+
+.display-nav a {
+  padding: 0.5em;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
 }
 
 .header-1,
@@ -139,6 +170,8 @@ hr {
   flex-basis: 60%;
 }
 
+/* After header */
+
 .stats {
   background-color: #30343f;
   padding: 25px;
@@ -169,6 +202,8 @@ hr {
   font-weight: bold;
   font-size: 1.2em;
 }
+
+/* Memberships section */
 
 .memberships {
   text-align: center;
@@ -239,6 +274,8 @@ hr {
   color: #fff;
   transition: background-color 0.3s, color 0.3s;
 }
+
+/* Amenities section */
 
 .amenities {
   margin-top: 20px;
@@ -311,7 +348,6 @@ hr {
 }
 
 @media only screen and (max-width: 1000px) {
-  /* Header CSS */
   .header-1 {
     padding: 4em 3em;
   }
@@ -320,35 +356,6 @@ hr {
     left: 5%;
     margin-left: 0;
   }
-}
-
-.hidden-nav {
-  display: none;
-}
-
-.display-nav {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  height: 100vh;
-  width: 50%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 11;
-}
-
-.display-nav li {
-  list-style: none;
-  margin-left: 25%;
-}
-
-.display-nav a {
-  padding: 0.5em;
-  text-decoration: none;
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-weight: 800;
 }
 
 @media (max-width: 800px) {
@@ -372,5 +379,32 @@ hr {
 
   .hamburger {
     display: block;
+  }
+}
+
+.fadein {
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 1s;
+  -moz-animation-name: fadein;
+  -moz-animation-duration: 1s;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
