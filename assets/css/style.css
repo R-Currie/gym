@@ -277,7 +277,11 @@ hr {
 }
 
 .amenities-list li:hover {
-  transform: rotate(5deg) scale(1.5);
+  transform: scale(1.2);
+}
+
+.amenities-list li:nth-child(2n):hover {
+  transform: rotate(5deg) scale(1.2);
 }
 
 .contact {
