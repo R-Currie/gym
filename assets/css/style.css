@@ -308,6 +308,7 @@ hr {
 
 .amenities-list i {
   margin: 20px 0;
+  transition: 1000ms;
 }
 
 .amenities-list h3 {
@@ -317,6 +318,10 @@ hr {
 
 .amenities-list:hover {
   background-color: #292c36;
+}
+
+.amenities-list:hover i {
+  color: #db5461;
 }
 
 .amenities-list li {
@@ -403,6 +408,16 @@ hr {
 
   .hamburger {
     display: block;
+  }
+
+  .display-nav {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-container {
+    flex-direction: column;
   }
 }
 
