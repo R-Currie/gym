@@ -423,6 +423,22 @@ hr {
   .contact-container {
     flex-direction: column;
   }
+
+  .header-1 img {
+    max-width: 8rem;
+  }
+
+  .header-1 h2 {
+    top: 15rem;
+  }
+
+  .display-nav li {
+    margin-left: 15%;
+  }
+
+  .membership-item {
+    width: 80%;
+  }
 }
 
 .fadein {
