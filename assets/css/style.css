@@ -220,9 +220,17 @@ hr {
   margin-top: 50px;
 }
 
+.slideshow h2 {
+  text-transform: uppercase;
+  color: #30343f;
+  margin-top: 30px;
+  margin: 2rem 0 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
 .slideshow-container {
-  max-width: 100vw;
-  height: 80vh;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -594,7 +602,11 @@ hr {
   }
 
   .membership-item {
-    width: 80%;
+    width: 70%;
+  }
+
+  .hamburger {
+    right: 0.25em;
   }
 }
 
