@@ -20,6 +20,10 @@ body {
   font-size: 1em;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 hr {
   background-color: #30343f;
   height: 3px;
@@ -218,14 +222,14 @@ hr {
 
 .slideshow-container {
   max-width: 100vw;
-  height: 90vh;
+  height: 80vh;
   position: relative;
   margin: auto;
 }
 
 .slideshow img {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
 }
 
 .mySlides {
@@ -299,6 +303,62 @@ hr {
   to {
     opacity: 1;
   }
+}
+
+/* Special section */
+
+.banner {
+  margin-top: 20px;
+  padding: 30px 0px;
+  text-align: center;
+  background-color: #30343f;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.banner-content {
+  margin: 0 30%;
+}
+
+.banner h2 {
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.banner h1 {
+  margin: 10px 0;
+}
+
+.banner p {
+  margin: 10px 0;
+}
+
+.banner hr {
+  background-color: #db5461;
+  border: none;
+}
+
+.join {
+  background-color: #db5461;
+  color: white;
+  border: 1px solid #30343f;
+  padding: 15px 10px;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin: 20px 20px;
+  opacity: 1;
+  transition: 300ms;
+  text-align: center;
+  width: 150px;
+}
+
+.join:hover {
+  background-color: #30343f;
+  color: #db5461;
+  border: 1px solid #db5461;
+  cursor: pointer;
 }
 
 /* Memberships section */
@@ -445,6 +505,8 @@ hr {
   transform: scale(1.2);
 }
 
+/* Contact section */
+
 .contact {
   text-align: center;
   color: #30343f;
@@ -491,6 +553,10 @@ hr {
   }
   .container {
     flex-direction: column;
+  }
+
+  .banner-content {
+    margin: 0 15%;
   }
 
   .header-1 img {
