@@ -212,6 +212,10 @@ hr {
 
 /* Slideshow section */
 
+.slideshow {
+  margin-top: 50px;
+}
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
